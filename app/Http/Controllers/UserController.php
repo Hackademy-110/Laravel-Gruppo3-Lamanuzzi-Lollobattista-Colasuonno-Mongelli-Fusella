@@ -10,4 +10,9 @@ class UserController extends Controller
 
         return view('auth.dashboard');
     }
+
+    public function create(){
+
+        return view('post.create');
+    }
 }

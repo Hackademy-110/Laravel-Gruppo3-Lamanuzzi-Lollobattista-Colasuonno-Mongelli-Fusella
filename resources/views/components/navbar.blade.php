@@ -38,6 +38,26 @@
 
       </ul>
       @endguest
+      @Auth
+      <ul class="navbar-nav text-end mb-2 mx-5 fw-bold fs-5 mb-lg-0">
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Accedi
+          </a>
+          <ul class="dropdown-menu">
+            <li class="nav-item me-2">
+              <a class="nav-link active" aria-current="page" href="{{route('auth.dashboard')}}">Dashboard</a>
+            </li>
+           
+            
+          </ul>
+        </li> 
+  
+        </ul>
+
+
+      @endAuth
     </ul>
     </div>
   </div>
