@@ -17,7 +17,4 @@ use App\Http\Controllers\UserDBController;
 */
 
 Route::get('/', [Controller::class,'Home'])->name('home');
-Route::get('/login',[UserController::class,'Login'])->name('login');
-Route::get('/register',[UserController::class,'Register'])->name('register');
-Route::post('/user/register',[UserDBController::class,'create'])->name('user.store'); 
 Route::get('/user/dashboard',[UserController::class,'dashdoard'])->name('user.daschboard');

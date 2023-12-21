@@ -11,14 +11,4 @@ class UserDBController extends Controller
   public function Dash(){
     //per controllare che a nome/mail corrisponda la password inserita per effettuare il login
   }
-  public function create(Request $request){
-    $img=$request->file('img')->store('public/img');
-    User::create([
-        'name'=>$request->name,
-        'email'=>$request->email,
-        'password'=>$request->password,
-        'img'=>$img
-    ]);
-    return redirect('/')->with('message','registrazione effettuata');
-  }
 }
