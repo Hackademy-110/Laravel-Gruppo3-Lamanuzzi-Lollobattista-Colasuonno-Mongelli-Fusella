@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <section class="row">
             <article class="col-12">
-                <form method="post" action="{{route('auth')}}">
+                <form method="post" action="{{route('login')}}">
                     @csrf
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Nome</label>
