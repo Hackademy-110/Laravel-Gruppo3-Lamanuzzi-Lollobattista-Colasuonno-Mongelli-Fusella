@@ -3,6 +3,7 @@
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserDBController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,4 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', [Controller::class,'Home'])->name('home');
-Route::get('/login',[UserController::class,'Login'])->name('login');
-Route::get('/register',[UserController::class,'Register'])->name('register');
-Route::post('/User/register',[UserDBController::class,'create'])->name('user.store');
+Route::get('/user/dashboard',[UserController::class,'dashdoard'])->name('user.daschboard');
