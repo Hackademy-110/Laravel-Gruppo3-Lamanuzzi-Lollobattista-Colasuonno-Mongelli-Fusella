@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserDBController extends Controller
@@ -18,6 +19,6 @@ class UserDBController extends Controller
         'password'=>$request->password,
         'img'=>$img
     ]);
-    
+    return redirect('/')->with('message','registrazione effettuata');
   }
 }
