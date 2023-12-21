@@ -7,11 +7,8 @@
         <title>Laravel Gruppo 3</title>
     </head>
     <body>
-        <div class="container-fluid">
-            <section class="row bg-info">
-                <h1 class="text-danger text-center">Buonsalve</h1>
-            </section>
-        </div>
-    
+        <x-navbar></x-navbar>
+        {{$slot}}
+        <x-footer></x-footer>
     </body>
 </html>
